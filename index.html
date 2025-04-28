@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .con {
+      color: green;
+      font-size: x-large;
+    }
+    .box {
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    a {
+      color: green;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+  <header class="w-full h-fit flex flex-col justify-center items-center bg-green-500 p-5 gap-5">
+    <h2 class="text-4xl font-bold text-white">Welcome to My Website Task...</h2>
+    <nav class="flex gap-5 text-white font-semibold text-[20px]">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto flex-grow p-5">
+    <div class="box bg-white">
+      <h1 class="con">About CSS</h1>
+      <p>Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation 
+        and styling of a document written in a markup language such as HTML or XML.
+        CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+    </div>
+
+    <div class="box bg-white">
+      <h1 class="con">Box Model</h1>
+      <p>The CSS box model is a container that contains multiple properties including borders, margin, padding, 
+        and the content itself. It is used to create the design and layout of web pages.</p>
+    </div>
+
+    <div class="box bg-white md:col-span-2">
+      <h1 class="con">Responsive Type</h1>
+      <p>Responsive type, also known as responsive typography or fluid typography, refers to the
+         practice of making text sizes and styles adapt to different screen sizes and viewports.
+         This ensures that text remains readable and visually appealing across various devices,
+         like desktops, tablets, and smartphones.</p>
+    </div>
+  </main>
+
+  <footer class="w-full flex flex-wrap justify-center items-center bg-black/90 text-[18px] text-white gap-3 p-4">
+    <h1>Created By Piyush |</h1>
+    <h2>Follow us on</h2>
+    <a class="text-green-400 hover:underline" href="#">Instagram</a>
+    <span>|</span>
+    <a class="text-green-400 hover:underline" href="#">Twitter</a>
+    <span>|</span>
+    <a class="text-green-400 hover:underline" href="#">LinkedIn</a>
+  </footer>
+
+</body>
+</html>
